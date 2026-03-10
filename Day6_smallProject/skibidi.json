@@ -1,0 +1,17 @@
+{
+  "member": [
+    {
+      "id": "5c2c",
+      "name": "Nguyễn Quang Huy",
+      "age": "21",
+      "role": "smoker"
+    },
+    {
+      "id": "bbee",
+      "name": "Nguyễn Quang Khải",
+      "age": "17",
+      "role": "controller"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}

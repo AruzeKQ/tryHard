@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ứng dụng Thời tiết</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="weather-card">
+        <h1>🌤️ Thời tiết</h1>
+        
+        <div class="search-box">
+            <input type="text" id="cityInput" placeholder="Nhập tên thành phố (vd: Hanoi)...">
+            <button id="searchBtn">Tìm kiếm</button>
+        </div>
+
+        <div id="errorMessage" class="hidden error-text">
+            <p>Không tìm thấy thành phố. Vui lòng thử lại!</p>
+        </div>
+
+        <div id="weatherInfo" class="hidden">
+            <h2 id="cityName">---</h2>
+            <img id="weatherIcon" src="" alt="Icon thời tiết">
+            
+            <h1 id="temperature">--°C</h1>
+            <p id="description">---</p>
+            
+            <div class="details">
+                <div class="detail-item">
+                    <span>💧 Độ ẩm:</span>
+                    <strong id="humidity">--%</strong>
+                </div>
+                <div class="detail-item">
+                    <span>🌬️ Sức gió:</span>
+                    <strong id="windSpeed">-- km/h</strong>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="riboo.js"></script>
+</body>
+</html>

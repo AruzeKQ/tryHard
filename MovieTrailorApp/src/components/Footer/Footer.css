@@ -1,0 +1,82 @@
+/* Footer chính */
+.footer {
+    background: linear-gradient(135deg, #020617, #0f172a);
+    color: #e2e8f0;
+    padding-top: 40px;
+    margin-top: 40px;
+}
+
+/* Layout */
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 32px;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+/* Cột */
+.footer-left h2 {
+    color: #38bdf8;
+    margin-bottom: 10px;
+}
+
+.footer-left p {
+    color: #94a3b8;
+}
+
+/* Center & right */
+.footer-center,
+.footer-right {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.footer-center h4,
+.footer-right h4 {
+    margin-bottom: 10px;
+    color: white;
+}
+
+/* Link */
+.footer a {
+    text-decoration: none;
+    color: #94a3b8;
+    transition: 0.3s;
+}
+
+.footer a:hover {
+    color: #38bdf8;
+}
+
+/* Social */
+.socials {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+/* Bottom */
+.footer-bottom {
+    text-align: center;
+    margin-top: 30px;
+    padding: 15px 0;
+    border-top: 1px solid #1e293b;
+    font-size: 14px;
+    color: #64748b;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .socials {
+        flex-direction: row;
+        gap: 15px;
+    }
+}

@@ -1,0 +1,114 @@
+/* Reset nhẹ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Container chính */
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 32px;
+    background: linear-gradient(135deg, #0f172a, #1e293b);
+    position: sticky;
+    color: white;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Logo */
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #38bdf8;
+    transition: 0.3s;
+}
+
+.logo:hover {
+    color: #0ea5e9;
+}
+
+/* Ô search */
+.header-center input {
+    width: 300px;
+    padding: 8px 14px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    background: #1e293b;
+    color: white;
+    transition: 0.3s;
+}
+
+.header-center input::placeholder {
+    color: #94a3b8;
+}
+
+.header-center input:focus {
+    background: #334155;
+}
+
+/* Nav bên phải */
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Link chung */
+.header-right a {
+    text-decoration: none;
+    color: #e2e8f0;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.header-right a:hover {
+    color: #38bdf8;
+}
+
+/* Nút login */
+.btn-login {
+    padding: 6px 14px;
+    border-radius: 20px;
+    background: #38bdf8;
+    color: #0f172a !important;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.btn-login:hover {
+    background: #0ea5e9;
+}
+
+/* Nút register */
+.btn-register {
+    padding: 6px 14px;
+    border-radius: 20px;
+    background: #38bdf8;
+    color: #0f172a !important;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.btn-register:hover {
+    background: #0ea5e9;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .header-center input {
+        width: 100%;
+    }
+
+    .header-right {
+        gap: 12px;
+    }
+}

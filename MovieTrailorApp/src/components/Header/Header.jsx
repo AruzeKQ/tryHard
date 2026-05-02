@@ -1,4 +1,5 @@
-import { Link } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, Link } from 'react-router-dom'
+import Login from '../Auth/Login';
 import './Header.css';
 
 export default function Header() {
@@ -18,6 +19,8 @@ export default function Header() {
                 <Link to="/login" className="btn-login">Đăng nhập</Link>
                 <Link to="/register" className="btn-register">Đăng ký</Link>
             </nav>
+
+
         </header>
     );
 }

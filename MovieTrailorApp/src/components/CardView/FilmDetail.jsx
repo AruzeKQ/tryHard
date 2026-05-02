@@ -5,7 +5,7 @@ export default function FilmDetail({ movie }) {
             <img src={movie.img} alt={movie.details} style={styles.image} />
             <div>
                 <h4 style={styles.title}>{movie.name}</h4>
-                <p style={styles.content}>{movie.content}</p>
+                {/* <p style={styles.content}>{movie.content}</p> */}
             </div>
         </div>
     )
@@ -35,13 +35,14 @@ const styles = {
     },
 
     title: {
-        margin: '0 0 10px 0',
+        margin: '10px 0 10px 0',
         fontSize: '18px',
         fontWeight: 'bold',
         color: '#333',
         whiteSpace: 'nowrap',
         overflow: 'hidden',
-        textOverflow: 'ellipsis' // Cắt chữ nếu tên phim quá dài (thêm ...)
+        textOverflow: 'ellipsis', // Cắt chữ nếu tên phim quá dài (thêm ...)
+        textAlign: 'center'
     },
 
     genre: {

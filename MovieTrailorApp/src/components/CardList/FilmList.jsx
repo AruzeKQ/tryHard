@@ -5,31 +5,88 @@ const films = [
         id: 1,
         name: "The Boys",
         img: "https://phimmoir.fm/storage/images/the-boys-phan-5/the-boys-phan-5-thumb-1775624659696.webp",
-        details: "Fiml skibidi",
+        details: "Film skibidi",
         content: "lorem sara babi"
     },
     {
         id: 2,
         name: "Mật ngữ kỷ",
         img: "https://phimmoir.fm/storage/images/mat-ngu-ky/mat-ngu-ky-thumb.webp",
-        details: "Fiml skibidi",
+        details: "Film skibidi",
         content: "lorem sara babi"
     },
     {
         id: 3,
         name: "Điều ước đoạt mạng",
         img: "https://phimmoir.fm/storage/images/dieu-uoc-doat-mang/dieu-uoc-doat-mang-thumb.webp",
-        details: "Fiml skibidi",
+        details: "Film skibidi",
         content: "lorem sara babi"
     },
     {
         id: 4,
         name: "Bác sĩ shin",
         img: "https://phimmoir.fm/storage/images/bac-si-shin/bac-si-shin-thumb.webp",
-        details: "Fiml skibidi",
+        details: "Film skibidi",
         content: "lorem sara babi"
 
     },
+    {
+        id: 5,
+        name: "Bác sĩ shin",
+        img: "https://phimmoir.fm/storage/images/bac-si-shin/bac-si-shin-thumb.webp",
+        details: "Film skibidi",
+        content: "lorem sara babi"
+
+    },
+    {
+        id: 6,
+        name: "Bác sĩ shin",
+        img: "https://phimmoir.fm/storage/images/bac-si-shin/bac-si-shin-thumb.webp",
+        details: "Film skibidi",
+        content: "lorem sara babi"
+
+    },
+    {
+        id: 7,
+        name: "Bác sĩ shin",
+        img: "https://phimmoir.fm/storage/images/bac-si-shin/bac-si-shin-thumb.webp",
+        details: "Film skibidi",
+        content: "lorem sara babi"
+
+    },
+    {
+        id: 8,
+        name: "Bác sĩ shin",
+        img: "https://phimmoir.fm/storage/images/bac-si-shin/bac-si-shin-thumb.webp",
+        details: "Film skibidi",
+        content: "lorem sara babi"
+
+    },
+    {
+        id: 9,
+        name: "Bác sĩ shin",
+        img: "https://phimmoir.fm/storage/images/bac-si-shin/bac-si-shin-thumb.webp",
+        details: "Film skibidi",
+        content: "lorem sara babi"
+
+    },
+    {
+        id: 10,
+        name: "Bác sĩ shin",
+        img: "https://phimmoir.fm/storage/images/bac-si-shin/bac-si-shin-thumb.webp",
+        details: "Film skibidi",
+        content: "lorem sara babi"
+
+    },
+    {
+        id: 11,
+        name: "Bác sĩ shin",
+        img: "https://phimmoir.fm/storage/images/bac-si-shin/bac-si-shin-thumb.webp",
+        details: "Film skibidi",
+        content: "lorem sara babi"
+
+    },
+
 ]
 
 

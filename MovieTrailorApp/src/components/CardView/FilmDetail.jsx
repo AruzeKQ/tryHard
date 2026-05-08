@@ -1,11 +1,12 @@
 
-export default function FilmDetail({ movie }) {
+export default function FilmDetail(props) {
     return (
+        console.log(props),
         <div style={styles.card}>
-            <img src={movie.img} alt={movie.details} style={styles.image} />
+            <img src={props.img} alt={props.details} style={styles.image} />
             <div>
-                <h4 style={styles.title}>{movie.name}</h4>
-                {/* <p style={styles.content}>{movie.content}</p> */}
+                <h4 style={styles.title}>{props.name}</h4>
+                {/* <p style={styles.content}>{props.content}</p> */}
             </div>
         </div>
     )

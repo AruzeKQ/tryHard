@@ -1,16 +1,22 @@
-import ChildTestFunction from "./components/childtestFunction"
-import TestFunction from "./components/testFunction"
-import ArrayTestFunction from "./components/arraytestFunction"
-import EventFunction from "./components/eventFunction"
-import ToggleFunction from "./components/toggleFunction"
-import RenderFunction from "./components/renderFunction"
-import WeatherLoad from "./components/fetchData"
-import ClockTimer from "./components/clockFunction"
-import Navigation from "./components/routeFunction"
+import { useState, createContext, useContext } from "react"
+import ButtonTheme from "./components/contextApi"
+import { ThemeContext } from "./components/contextTheme";
 export default function App() {
+    const [theme, setTheme] = useState('light')
+    const toggleTheme = () => {
+        setTheme(prevTheme => {
+            prevTheme === 'light' ? 'dark' : 'light'
+        });
+    };
     return (
-        <>
-            <Navigation />
-        </>
+        <ThemeContext.Provider value={{ theme, toggleTheme }}>
+            <div style={{
+                background: theme === 'light' ? '#fff' : '#222',
+                color: theme === 'light' ? '#000' : '#fff',
+                height: 1000,
+            }}>
+                <ButtonTheme />
+            </div>
+        </ThemeContext.Provider>
     )
 }

@@ -1,22 +1,15 @@
-import { useState, createContext, useContext } from "react"
-import ButtonTheme from "./components/contextApi"
-import { ThemeContext } from "./components/contextTheme";
+import { useState } from "react"
 export default function App() {
-    const [theme, setTheme] = useState('light')
-    const toggleTheme = () => {
-        setTheme(prevTheme => {
-            prevTheme === 'light' ? 'dark' : 'light'
-        });
-    };
+    const [name, setName] = useState("");
+    const handleChange = (event) => {
+        setName(event.target.value);
+    }
+
     return (
-        <ThemeContext.Provider value={{ theme, toggleTheme }}>
-            <div style={{
-                background: theme === 'light' ? '#fff' : '#222',
-                color: theme === 'light' ? '#000' : '#fff',
-                height: 1000,
-            }}>
-                <ButtonTheme />
-            </div>
-        </ThemeContext.Provider>
+        <div>
+            <input value={name} onChange={handleChange} type="text" />
+            <p>Name is: {name}</p>
+        </div>
     )
+
 }

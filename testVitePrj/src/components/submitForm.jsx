@@ -34,22 +34,31 @@ export default function SubmitForm() {
                     name="fullName"
                     value={formData.fullName}
                     onChange={handleChange}
+                    placeholder="Please Enter The FullName"
                     type="text"
                 />
+
+                <br />
 
                 <input
                     name="phone"
                     value={formData.phone}
                     onChange={handleChange}
+                    placeholder="Please Enter The Phone"
                     type="text"
                 />
+
+                <br />
 
                 <input
                     name="address"
                     value={formData.address}
                     onChange={handleChange}
+                    placeholder="Please Enter The Address"
                     type="text"
                 />
+
+                <br />
 
                 <button type="submit">Xác Nhận</button>
 

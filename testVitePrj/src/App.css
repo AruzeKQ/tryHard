@@ -1,17 +1,77 @@
-.formSubmit {
-    margin: 20px 500px 20px 500px;
-    font-size: 50%;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    border-style: solid;
-    border-width: 1px;
+body {
+    background-color: rgb(236, 250, 185);
 }
 
 
-.formSubmit .testData {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 30px;
-    align-items: left;
+.to-do-container {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 10px;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+button {
+    font-size: 1.7rem;
+    font-weight: bold;
+    color: white;
+    padding: 10px 10px;
+    background-color: hsl(0, 0%, 21%);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.5ms ease;
+}
+
+.btn-add {
+    background-color: green;
+}
+
+.btn-add:hover {
+    background-color: rgb(162, 241, 162);
+}
+
+.btn-delete {
+    background-color: rgb(252, 9, 9);
+}
+
+.btn-delete:hover {
+    background-color: rgb(252, 147, 143);
+}
+
+.btn-edit {
+    background-color: rgb(37, 66, 85);
+}
+
+.btn-edit:hover {
+    background-color: rgb(175, 223, 235);
+}
+
+input[type="text"] {
+    font-size: 1.6rem;
+    padding: 10px;
+    border: 2px solid rgb(22, 22, 22);
+    border-radius: 5px;
+}
+
+ol {
+    padding: 0;
+}
+
+li {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: aqua;
+    display: flex;
+    align-items: center;
+}
+
+.text {
+    flex: 1;
 }

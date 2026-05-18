@@ -5,7 +5,7 @@ import { useFetcher } from './useFetch';
 export default function ProductList() {
     const { data: info, loading, error } = useFetcher('https://api.sampleapis.com/avatar/info')
 
-    const x = JSON.stringify(data, null, 2)
+    const x = JSON.stringify(info)
 
     if (loading) return <h2> Đang tải đợi một chút </h2>
 

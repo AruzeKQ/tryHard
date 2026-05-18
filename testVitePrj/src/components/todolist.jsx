@@ -3,22 +3,46 @@ import React, { useState } from 'react'
 export default function ToDoList() {
     const [tasks, setTasks] = useState(["Làm bài tập về nhà", "Tập gym", "Chơi game"]);
     const [newTask, setNewTask] = useState("");
-
+    const [isEdit, setIsEdit] = useState(false)
+    const [editIndex, setEditIndex] = useState(null)
 
     function handledTask(e) {
         setNewTask(e.target.value)
     }
 
     function addedTask() {
-        if (newTask.trim() != "") {
+
+        if (isEdit === true) {
+            const updateTask = [...tasks]
+            updateTask[editIndex] = newTask
+            setTasks(updateTask)
+            // console.log(updateTask) debug           
+            setIsEdit(false)
+            setEditIndex(null)
+        } else if (newTask.trim() != "") {
             setTasks(t => [...t, newTask])
-            setNewTask("")
         }
+        setNewTask("")
+
     }
 
     function removedTask(index) {
         const updatedTask = tasks.filter((_, i) => i !== index)
         setTasks(updatedTask)
+    }
+
+    function confirmTask(index) {
+        const updateTask = [...tasks]
+        updateTask[index] = newTask
+        console.log(updateTask)
+        setTasks(updateTask)
+    }
+
+    function editedTask(index) {
+        const selectedTask = tasks[index]
+        setEditIndex(index)
+        setNewTask(selectedTask)
+        setIsEdit(true)
     }
 
     return (
@@ -34,7 +58,7 @@ export default function ToDoList() {
             <button
                 className='btn-add'
                 onClick={() => addedTask()}>
-                Xác nhận
+                {isEdit ? "Sửa" : "Xác nhận"}
             </button>
 
             <ol>
@@ -48,7 +72,7 @@ export default function ToDoList() {
                         </button>
                         <button
                             className='btn-edit'
-                            onClick={() => editTask(index)}>
+                            onClick={() => editedTask(index)}>
                             Sửa
                         </button>
                     </li>

@@ -11,16 +11,16 @@ export default function ToDoList() {
     }
 
     function addedTask() {
-
+        // Kiểm tra button
         if (isEdit === true) {
             const updateTask = [...tasks]
             updateTask[editIndex] = newTask
-            setTasks(updateTask)
+            setTasks(updateTask) // update Task được sửa
             // console.log(updateTask) debug           
             setIsEdit(false)
             setEditIndex(null)
         } else if (newTask.trim() != "") {
-            setTasks(t => [...t, newTask])
+            setTasks(t => [...t, newTask]) // thêm Task vào trong List
         }
         setNewTask("")
 
@@ -29,13 +29,6 @@ export default function ToDoList() {
     function removedTask(index) {
         const updatedTask = tasks.filter((_, i) => i !== index)
         setTasks(updatedTask)
-    }
-
-    function confirmTask(index) {
-        const updateTask = [...tasks]
-        updateTask[index] = newTask
-        console.log(updateTask)
-        setTasks(updateTask)
     }
 
     function editedTask(index) {

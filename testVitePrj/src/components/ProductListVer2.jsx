@@ -1,5 +1,5 @@
 import React from 'react';
-import { useFetcher } from './useFetch';
+import useFetcher from './useFetch';
 
 
 export default function ProductList() {
@@ -18,7 +18,7 @@ export default function ProductList() {
             <ul>
                 <h2>Info: </h2>
                 {info && info.map((item) => {
-                    return <li key={item.id}>{item.name}</li>
+                    return <li key={item.id}>{item.yearsAired}</li>
                 })}
             </ul>
         </div>
